@@ -205,7 +205,7 @@ function Column<T>({
   };
   const classNameFilter = cs(`${prefixCls}-filters`, {
     [`${prefixCls}-filters-open`]: filterVisible,
-    [`${prefixCls}-filters-active`]: currentFilter && currentFilter.length,
+    [`${prefixCls}-filters-active`]: currentFilter && currentFilter.flat().length,
   });
   let styleTh: CSSProperties = {
     ...columnFixedStyle,
